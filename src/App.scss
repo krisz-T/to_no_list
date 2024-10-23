@@ -1,0 +1,146 @@
+$col_1: #03261D;
+$col_2: #0D8575;
+$col_3: #3DE3E0;
+$col_4: #99F2FB;
+$col_5: #F2FCFF;
+
+@font-face {
+    font-family: 'o_serif';
+    src: url('./assets/o_serif.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('./assets/montserrat.otf');
+}
+
+.main {
+    background-color: $col_1;
+}
+
+.project_title {
+    font-family: 'o_serif';
+    font-size: 5em;
+    color: $col_4;
+    margin: 0;
+    text-align: center;
+    text-shadow: 3px 3px 2px #000000;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.horizontal_line {
+    margin: 2rem;
+}
+
+.task_input {
+    font-family: 'montserrat';
+    border: 2px solid $col_2;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #000000;
+    background-color: $col_2;
+}
+
+.task_input:focus {
+    background-color: $col_3;
+    outline: none;
+}
+
+.add_button {
+    font-family: 'montserrat';
+    font-weight: bold;
+    background-color: $col_2;
+    color: $col_4;
+    border: none;
+    padding: 0.5rem 2rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #000000;
+    transition-duration: 0.3s;
+    cursor: crosshair;
+}
+
+.add_button:hover {
+    background-color: $col_3;
+    color: $col_5;
+    transition-duration: 0.3s;
+}
+
+.task_list {
+    font-size: 2em;
+    color: $col_4;
+    margin: 0;
+    list-style-position: inside;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.task_list_item {
+    font-family: 'montserrat';
+    text-shadow: 1px 1px 2px #000000;
+    width: 55rem;
+}
+
+.up_button {
+    font-family: 'montserrat';
+    background-color: $col_2;
+    border-right: 1px solid $col_3;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px 0px 0px 5px;
+    height: 2rem;
+    margin-left: 20px;
+    box-shadow: 2px 2px 2px #000000;
+    cursor: pointer;
+    width: 3rem;
+}
+
+.up_button:hover {
+    font-size: 1.5rem;
+    transition-duration: 0.2s;
+}
+
+.down_button {
+    font-family: 'montserrat';
+    background-color: $col_2;
+    border-left: 1px solid $col_3;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0px 5px 5px 0px;
+    height: 2rem;
+    box-shadow: 2px 2px 2px #000000;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    width: 3rem;
+}
+
+.down_button:hover {
+    font-size: 1.5rem;
+    transition-duration: 0.2s;
+}
+
+.del_button {
+    font-family: 'montserrat';
+    background-color: $col_5;
+    border: none;
+    margin: 1rem;
+    height: 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000000;
+    transition-duration: 0.2s;
+    cursor: not-allowed;
+}
+
+.del_button:hover {
+    font-size: 1rem;
+    transition-duration: 0.2s;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
